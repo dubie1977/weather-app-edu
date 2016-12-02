@@ -14,6 +14,8 @@ var WeatherComponent = (function () {
     function WeatherComponent(service) {
         this.service = service;
         this.service.getCurrentLocation();
+        this.service.getCurrentWeather(45.68944, -122.58290)
+            .subscribe(function (weather) { return console.log(weather); }, function (err) { return console.error(err); });
     }
     WeatherComponent = __decorate([
         core_1.Component({
