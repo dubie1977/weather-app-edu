@@ -15,11 +15,23 @@ import { Weather } from '../model/weather';
 export class WeatherComponent implements OnInit{ 
     pos: Position;
     weatherData = new Weather(null, null, null, null, null);
+    currentSpeedUnit = "kph";
+    currentTempUnit = "F";
 
     constructor(private service: WeatherService){}
 
     ngOnInit(){
         this.getCurrentLocation();
+    }
+
+    mesurementToggle(){
+        if(this.currentTempUnit == "F"){
+            this.currentTempUnit = "C";
+            this.currentSpeedUnit = "mph";
+        } else{
+            this.currentTempUnit = "F";
+            this.currentSpeedUnit = "kph";
+        }
     }
 
     getCurrentLocation(){
