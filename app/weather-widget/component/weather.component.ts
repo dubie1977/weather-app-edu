@@ -15,7 +15,7 @@ import { Weather } from '../model/weather';
 export class WeatherComponent implements OnInit{ 
     pos: Position;
     weatherData = new Weather(null, null, null, null, null);
-    currentSpeedUnit = "kph";
+    currentSpeedUnit = "mph";
     currentTempUnit = "F";
 
     constructor(private service: WeatherService){}
@@ -27,10 +27,10 @@ export class WeatherComponent implements OnInit{
     mesurementToggle(){
         if(this.currentTempUnit == "F"){
             this.currentTempUnit = "C";
-            this.currentSpeedUnit = "mph";
+            this.currentSpeedUnit = "kph";
         } else{
             this.currentTempUnit = "F";
-            this.currentSpeedUnit = "kph";
+            this.currentSpeedUnit = "mph";
         }
     }
 

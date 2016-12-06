@@ -15,7 +15,7 @@ var WeatherComponent = (function () {
     function WeatherComponent(service) {
         this.service = service;
         this.weatherData = new weather_1.Weather(null, null, null, null, null);
-        this.currentSpeedUnit = "kph";
+        this.currentSpeedUnit = "mph";
         this.currentTempUnit = "F";
     }
     WeatherComponent.prototype.ngOnInit = function () {
@@ -24,11 +24,11 @@ var WeatherComponent = (function () {
     WeatherComponent.prototype.mesurementToggle = function () {
         if (this.currentTempUnit == "F") {
             this.currentTempUnit = "C";
-            this.currentSpeedUnit = "mph";
+            this.currentSpeedUnit = "kph";
         }
         else {
             this.currentTempUnit = "F";
-            this.currentSpeedUnit = "kph";
+            this.currentSpeedUnit = "mph";
         }
     };
     WeatherComponent.prototype.getCurrentLocation = function () {

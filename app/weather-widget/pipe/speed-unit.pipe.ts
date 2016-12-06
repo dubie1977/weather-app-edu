@@ -7,12 +7,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SpeedUnitPipe implements PipeTransform {
     transform(speed: number, unitType: string): string{
         switch(unitType){
-            case "mph":
+            case "kph":
             const miles = speed * 1.6;
-            return miles + "mph";
+            return miles + " kph";
 
             default:
-            return speed + "kph";
+            return speed + " mph";
 
         }
     }
