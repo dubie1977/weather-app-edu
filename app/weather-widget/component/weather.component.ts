@@ -4,6 +4,10 @@ import { WeatherService } from '../service/weather.service';
 
 import { Weather } from '../model/weather';
 
+import { WEATHER_COLORS } from '../constants/constants';
+
+declare var Skycons: any;
+
 @Component({
     moduleId: module.id,
     selector: 'weather-widget',
@@ -18,6 +22,7 @@ export class WeatherComponent implements OnInit{
     currentSpeedUnit = "mph";
     currentTempUnit = "F";
     currentLocation = "";
+    icons = new Skycons({"color": "#FFF"});
 
     constructor(private service: WeatherService){}
 
@@ -53,6 +58,8 @@ export class WeatherComponent implements OnInit{
                 this.weatherData.wind = weather["currently"]["windSpeed"],
                 this.weatherData.humidity = weather["currently"]["humidity"],
                 this.weatherData.icon = weather["currently"]["icon"]
+                console.log(this.weatherData)
+                this.setIcon();
             }, 
             err => console.error(err));
     }
@@ -64,5 +71,10 @@ export class WeatherComponent implements OnInit{
                 console.log(this.currentLocation);
                 console.log(location); //TODO remove
             })
+    }
+
+    setIcon(){
+        this.icons.add("icon", this.weatherData.icon);
+        this.icons.play();
     }
 }
