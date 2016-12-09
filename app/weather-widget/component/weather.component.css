@@ -25,15 +25,15 @@
 }
 
 .card-block{
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 0;
 }
 
-#indicatior{
+#loading{
     height: 165px;
     position: relative;
 }
 
-#indicator i{
+#loading i{
     position: absolute;
     top: 50%;
     left: 50%;
