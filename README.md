@@ -3,7 +3,7 @@ In this project I made a reusable weather app.
 It pulls the user location from the browser an then uses that info to get their weather info to display.
 Below is a screen shot of the desired produt.
 
-[![Project Objective](img/screen-course-objective.gif)
+[Project Objective](img/screen-course-objective.gif)
 
 ## Project Dependencies
 
@@ -11,14 +11,15 @@ Below is a screen shot of the desired produt.
 Font Awesome, Bootstrap
 
 ### Custom Libraries
-"app/weather-widget/libraries/skycons/skycons.js"
+- "app/weather-widget/libraries/skycons/skycons.js"
 
 ### Modules
-Jsonp, Http
+- Jsonp
+- Http
 
 ### Components
-{ WeatherComponent } from './weather-widget/component/weather.component'
+- { WeatherComponent } from './weather-widget/component/weather.component'
 
 ### Custom Pipes
-{ SpeedUnitPipe } from './weather-widget/pipe/speed-unit.pipe'
-{ TempUnitPipe } from './weather-widget/pipe/temp-unit.pipe'
+- { SpeedUnitPipe } from './weather-widget/pipe/speed-unit.pipe'
+- { TempUnitPipe } from './weather-widget/pipe/temp-unit.pipe'
