@@ -3,7 +3,7 @@
 <p>It pulls the user location from the browser an then uses that info to get their weather info to display.</p>
 <p>Below is a screen shot of the desired produt.<p>
 <BR>
-![Project Objective](https://github.com/dubie1977/weather-app-edu/raw/master/img/screen-course-objective.gif?raw=true "Project Objective")
+[Project Objective](img/screen-course-objective.gif)
 <BR>
 <h2>Project Dependencies</h2>
 <br>
