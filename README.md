@@ -8,7 +8,8 @@ Below is a screen shot of the desired produt.
 ## Project Dependencies
 
 ### NPM Libraries
-Font Awesome, Bootstrap
+- Font Awesome
+- Bootstrap
 
 ### Custom Libraries
 - "app/weather-widget/libraries/skycons/skycons.js"
