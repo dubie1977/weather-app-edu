@@ -3,7 +3,7 @@ In this project I made a reusable weather app.
 It pulls the user location from the browser an then uses that info to get their weather info to display.
 Below is a screen shot of the desired produt.
 
-[Project Objective](img/screen-course-objective.gif)
+![Project Objective](img/screen-course-objective.gif)
 
 ## Project Dependencies
 
