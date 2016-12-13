@@ -43,15 +43,15 @@
 
 canvas{
     max-width: 250px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 #refresh-data{
-    padding-top: 4.0 rem;
+    margin-top: .5rem;
     border: none;
-    outline-color: rgba(76, 175, 80, 0.1);
+    outline-color: rgba(76, 175, 80, 0.3);
     outline-width: .1rem;
-    background: rgba(76, 175, 80, 0.1);
+    background: rgba(76, 175, 80, 0.3);
 }
 
 .card-block,
@@ -74,6 +74,6 @@ canvas{
 p {
     margin: .2rem;
 }
-p:not(.unit-label){
+p:not(.unit-label).p:not(#update-time){
     text-transform: uppercase;
 }

@@ -24,6 +24,7 @@ export class WeatherComponent implements OnInit{
     currentLocation = "";
     icons = new Skycons({"color": "#FFF"});
     dataRecived = false;
+    lastUpdateTime: number;
 
     constructor(private service: WeatherService){}
 
@@ -62,6 +63,8 @@ export class WeatherComponent implements OnInit{
                 console.log(this.weatherData)
                 this.setIcon();
                 this.dataRecived = true;
+                this.lastUpdateTime = Date.now();
+                console.log(this.lastUpdateTime);
             }, 
             err => console.error(err));
     }

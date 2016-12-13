@@ -56,6 +56,8 @@ var WeatherComponent = (function () {
             console.log(_this.weatherData);
             _this.setIcon();
             _this.dataRecived = true;
+            _this.lastUpdateTime = Date.now();
+            console.log(_this.lastUpdateTime);
         }, function (err) { return console.error(err); });
     };
     WeatherComponent.prototype.getLocationName = function () {
