@@ -6,7 +6,9 @@ Reverse goeocoding is also done with the longitude and latitude useing a google 
 Then the current weather is displayed.
 The user can click on the widget to switch units of measurements.
 Below is a screen shot of the final product covered in class.
+The color scheem changes baised on the current weather.
 
+#Project Goal
 ![Project Objective](img/screen-course-objective.gif)
 
 ##Project Challanges
@@ -17,6 +19,12 @@ Below is a screen shot of the final product covered in class.
 ##Custom Tweeks
 - Add temperature units next to temperature.
 - Use the same unit system for both temperature and speed.
+- Changed some of the styling.
+- Made a refresh button.
+- Added the date and time.
+
+##Current Screen Shoot
+![Current Version](img/screen-current.tiff)
 
 
 ## Project Dependencies
