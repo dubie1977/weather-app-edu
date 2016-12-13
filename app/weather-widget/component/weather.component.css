@@ -46,6 +46,14 @@ canvas{
     margin-bottom: 1rem;
 }
 
+#refresh-data{
+    padding-top: 4.0 rem;
+    border: none;
+    outline-color: rgba(76, 175, 80, 0.1);
+    outline-width: .1rem;
+    background: rgba(76, 175, 80, 0.1);
+}
+
 .card-block,
 .card-footer{
     text-align: center;

@@ -14,6 +14,7 @@
         </div>
         <canvas id="icon" [hidden]="!dataRecived"></canvas>
         <p>{{ weatherData.summary }}</p>
+        <button type="submit" id="refresh-data" (click)="refreshData($event, f)" class="btn btn-primary" [disabled]="!dataRecived">Refresh Data</button>
     </div>
     <div class="card-footer" [class.invisible]="!dataRecived">
         <div class="row" id="detail-row">

@@ -90,4 +90,10 @@ export class WeatherComponent implements OnInit{
 
         }
     }
+
+    refreshData($event, f){
+        this.getCurrentLocation();
+
+        $event.stopPropagation();
+    }
 }

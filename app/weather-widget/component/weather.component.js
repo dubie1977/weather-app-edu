@@ -81,6 +81,10 @@ var WeatherComponent = (function () {
             return constants_1.WEATHER_COLORS["default"];
         }
     };
+    WeatherComponent.prototype.refreshData = function ($event, f) {
+        this.getCurrentLocation();
+        $event.stopPropagation();
+    };
     WeatherComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

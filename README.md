@@ -1,9 +1,23 @@
 # Weather App
 In this project I made a reusable weather app.
-It pulls the user location from the browser an then uses that info to get their weather info to display.
-Below is a screen shot of the desired produt.
+It pulls the user location from the browser as longitude and latitude.
+The longitude and latitude is then used to pull the current weather from forcast.io.
+Reverse goeocoding is also done with the longitude and latitude useing a google maps.
+Then the current weather is displayed.
+The user can click on the widget to switch units of measurements.
+Below is a screen shot of the final product covered in class.
 
 ![Project Objective](img/screen-course-objective.gif)
+
+##Project Challanges
+- Add a refresh button on component.
+- Show the data and time of the last time the data was refreshed.
+
+
+##Custom Tweeks
+- Add temperature units next to temperature.
+- Use the same unit system for both temperature and speed.
+
 
 ## Project Dependencies
 
@@ -24,3 +38,4 @@ Below is a screen shot of the desired produt.
 ### Custom Pipes
 - { SpeedUnitPipe } from './weather-widget/pipe/speed-unit.pipe'
 - { TempUnitPipe } from './weather-widget/pipe/temp-unit.pipe'
+
