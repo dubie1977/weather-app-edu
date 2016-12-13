@@ -60,11 +60,9 @@ export class WeatherComponent implements OnInit{
                 this.weatherData.wind = weather["currently"]["windSpeed"],
                 this.weatherData.humidity = weather["currently"]["humidity"],
                 this.weatherData.icon = weather["currently"]["icon"]
-                console.log(this.weatherData)
                 this.setIcon();
                 this.dataRecived = true;
                 this.lastUpdateTime = Date.now();
-                console.log(this.lastUpdateTime);
             }, 
             err => console.error(err));
     }
@@ -73,8 +71,6 @@ export class WeatherComponent implements OnInit{
         this.service.getLocationName(this.pos.coords.latitude, this.pos.coords.longitude)
             .subscribe( location => {
                 this.currentLocation = location["results"]["3"]["formatted_address"];
-                console.log(this.currentLocation);
-                console.log(location); //TODO remove
             })
     }
 

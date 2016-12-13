@@ -53,11 +53,9 @@ var WeatherComponent = (function () {
                 _this.weatherData.wind = weather["currently"]["windSpeed"],
                 _this.weatherData.humidity = weather["currently"]["humidity"],
                 _this.weatherData.icon = weather["currently"]["icon"];
-            console.log(_this.weatherData);
             _this.setIcon();
             _this.dataRecived = true;
             _this.lastUpdateTime = Date.now();
-            console.log(_this.lastUpdateTime);
         }, function (err) { return console.error(err); });
     };
     WeatherComponent.prototype.getLocationName = function () {
@@ -65,8 +63,6 @@ var WeatherComponent = (function () {
         this.service.getLocationName(this.pos.coords.latitude, this.pos.coords.longitude)
             .subscribe(function (location) {
             _this.currentLocation = location["results"]["3"]["formatted_address"];
-            console.log(_this.currentLocation);
-            console.log(location); //TODO remove
         });
     };
     WeatherComponent.prototype.setIcon = function () {

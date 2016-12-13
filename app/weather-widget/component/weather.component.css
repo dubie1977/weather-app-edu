@@ -46,12 +46,21 @@ canvas{
     margin-bottom: 0.5rem;
 }
 
-#refresh-data{
+#refresh-button{
     margin-top: .5rem;
-    border: none;
-    outline-color: rgba(76, 175, 80, 0.3);
-    outline-width: .1rem;
-    background: rgba(76, 175, 80, 0.3);
+    border: 10rem;
+    outline-color: rgba(76, 175, 80, 0.5);
+    outline-width: .3rem; 
+    background: rgba(76, 175, 80, 0.5);
+    box-shadow: 1px 5px 0px #00823F;
+    position: relative;
+    top: 1px;
+    transition: all ease 0.1s;
+}
+
+#refresh-button:active {
+    box-shadow: 0 3px 0 #00823F;
+    top: 3px;
 }
 
 .card-block,

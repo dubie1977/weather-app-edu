@@ -19,13 +19,13 @@
         </div>
         <canvas id="icon" [hidden]="!dataRecived"></canvas>
         <p>{{ weatherData.summary }}</p>
-        <button type="submit" id="refresh-data" (click)="refreshData($event, f)" class="btn btn-primary" [disabled]="!dataRecived">Refresh Data</button>
+        <button type="submit" id="refresh-button" (click)="refreshData($event, f)" class="btn btn-primary" [disabled]="!dataRecived">Refresh Data</button>
     </div>
     <div class="card-footer" [class.invisible]="!dataRecived">
         <div class="row" id="detail-row">
             <div class="col-xs-5">
                 <p>Wind</p>
-                <p class="unit-label">{{ weatherData.wind | number: '.0-0' | speedUnit: currentSpeedUnit}}</p>
+                <p  class="unit-label">{{ weatherData.wind | speedUnit: currentSpeedUnit}}</p>
             </div>
             <div class="col-xs-5 offset-xs-2">
                 <p>Humidity</p>
