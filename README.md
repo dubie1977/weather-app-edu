@@ -24,7 +24,7 @@ The color scheem changes baised on the current weather.
 - Added the date and time.
 
 ##Current Screen Shoot
-![Current Version](img/screen-current.tiff)
+![Current Version](img/screen-current.gif)
 
 
 ## Project Dependencies
